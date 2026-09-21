@@ -20,3 +20,11 @@ entity Courses: cuid, managed{
         duration    : Integer;
        
 }
+
+entity Address{
+    key addressID: Integer;
+    description: String;
+    city:String;
+    country:String;
+    pincode:String;
+}
