@@ -1,0 +1,33 @@
+### Reading data from students
+GET http://localhost:4004/odata/v4/student-api/StudentSet
+
+### Creating record in Students table
+
+POST http://localhost:4004/odata/v4/student-api/StudentSet
+Content-Type: application/json
+
+ {
+      "name": "Jane Smith",
+      "Address": "456 Oak Avenue",
+      "email": "jane.smith@email.com",
+      "mobile": "+1-555-0143",
+      "age": 21,
+      "gender": "Female"
+    }
+
+
+### Update Data
+
+PATCH http://localhost:4004/odata/v4/student-api/StudentSet('a7e892c1-b345-4678-bd90-dfa234567890')
+Content-Type: application/json
+
+{
+      "name": "Deepak",
+      "email": "deepak@email.com"
+
+    }
+
+### Delete Data
+
+DELETE http://localhost:4004/odata/v4/student-api/StudentSet('a7e892c1-b345-4678-bd90-dfa234567890')
+
